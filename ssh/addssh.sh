@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 #Getting user
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/lizsvr/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/Andyyudak1/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -71,7 +71,7 @@ echo -e  "${success} Menambahkan User Please Wait.."
 sleep 5
 clear
 fi
-echo -e "Thank You For Using Our Services"
+echo -e "Terima Kasih SC by Andyyuda"
 echo -e "====== SSH & OVPN Account ======"
 echo -e "IP/Host       : $IP"
 echo -e "Domain        : ${domain}"
